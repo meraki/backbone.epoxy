@@ -59,8 +59,8 @@
 	var modelMap;
 	var modelProps = ['computeds'];
 
-	Epoxy.Model = Backbone.Model.extend({
-		_super: Backbone.Model,
+	Epoxy.Model = Backbone.AssociatedModel.extend({
+		_super: Backbone.AssociatedModel,
 		
 		// Backbone.Model constructor override:
 		// configures computed model attributes around the underlying native Backbone model.
